@@ -1,0 +1,25 @@
+{
+  "status": "healthy",
+  "timestamp": "2024-01-26T10:00:00Z",
+  "service_name": "user-dashboard",
+  "version": "1.2.3",
+  "dependencies": {
+    "database": {
+      "status": "healthy",
+      "response_time_ms": 15
+    },
+    "authentication_service": {
+      "status": "healthy",
+      "response_time_ms": 22
+    },
+    "cache": {
+      "status": "degraded",
+      "message": "Cache hit rate below threshold"
+    }
+  },
+  "metrics": {
+    "cpu_usage": 0.15,
+    "memory_usage": 0.6,
+    "active_users": 1234
+  }
+}
